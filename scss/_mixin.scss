@@ -1,0 +1,23 @@
+@mixin set($top-margin,$text-align,$margin-left,$overflow,$text-overflow,$display,$line-height,$max-height,$line-clam,$box-orient){
+    margin-top: $top-margin;
+    text-align: $text-align;
+    margin-left: $margin-left;
+    overflow: $overflow;
+    text-overflow: $text-overflow;
+    display: $display;
+    line-height: $line-height;
+    max-height: $max-height;
+    -webkit-line-clamp: $line-clam;
+    -webkit-box-orient: $box-orient;
+}
+
+#video-section {
+    p{
+         @include set(10px,left,17px,hidden,ellipsis,-webkit-box,20px,100px,5,vertical);
+     }
+ }
+ #our_products {
+    p{
+         @include set(10px,left,17px,hidden,ellipsis,-webkit-box,20px,100px,5,vertical);
+     }
+ }
