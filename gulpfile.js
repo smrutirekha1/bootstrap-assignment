@@ -1,7 +1,5 @@
 const gulp = require('gulp');
-
 const sass = require('gulp-sass');
-
 const browserSync = require('browser-sync').create();
 
 //compile by scss to css and place in my src folder
@@ -41,8 +39,6 @@ gulp.task('serve', ['sass'], function () {
         server: './'
 
     });
-
-
 
     gulp.watch("scss/*.scss", ['sass']);
 
